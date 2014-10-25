@@ -1,0 +1,182 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  max-height: 100%;
+  font-size: 13px;
+}
+
+body {
+  height: 100%;
+  max-height: 100%;
+  font: 13px 'PT Sans', sans-serif;
+  color: black;
+  background-color: white;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  font-size: 13px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin: 0;
+}
+
+/*h1 {
+    font-size: 39px; // 3rem
+}
+h2 {
+    font-size: ms(5); // 2.6rem
+}
+h3 {
+    font-size: ms(4); // 1.8rem;
+}
+h4 {
+    font-size: ms(3); // 1.7rem;
+}
+h5 {
+    &, & a {
+        font-size: ms(2); // 1.4rem;
+    }
+}
+h6 {
+    font-size: 13px; // 1rem
+}*/
+pre {
+  margin: 0;
+}
+
+p, ul, ol {
+  list-style: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#layout {
+  position: relative;
+  background: #FFFFFF;
+}
+
+.site-header {
+  position: absolute;
+  top: 20px;
+  left: 1%;
+  width: 98%;
+  padding: 5px 30px;
+  background: #FFFFFF;
+  z-index: 1;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.22);
+}
+.site-header .logo {
+  float: left;
+  height: 50px;
+}
+.site-header .site-nav {
+  float: right;
+  margin: 17px 0 0 0;
+}
+.site-header .site-nav a {
+  color: #2C3E50;
+  font-size: 16px;
+  margin-left: 35px;
+}
+
+.carousel {
+  height: 100vh;
+}
+.carousel .items {
+  height: 93vh;
+  overflow: hidden;
+}
+.carousel .item {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  opacity: 0;
+  transition: 1s opacity ease-in;
+}
+.carousel .item[data-id='eye'] {
+  background-image: url("../img/slide-eye.jpg");
+}
+.carousel .item[data-id='ear'] {
+  background-image: url("../img/slide-ear.jpg");
+}
+.carousel .item[data-id='teeth'] {
+  background-image: url("../img/slide-teeth.jpg");
+}
+.carousel .item[data-id='lungs'] {
+  background-image: url("../img/slide-lungs.jpg");
+}
+.carousel .item[data-id='brain'] {
+  background-image: url("../img/slide-brain.jpg");
+}
+.carousel .item.fade-in {
+  opacity: 1;
+}
+.carousel .item.fade-out {
+  opacity: 0;
+}
+.carousel .index {
+  height: 7vh;
+  background: #31D4E7;
+}
+.carousel .index span {
+  display: inline-block;
+  height: inherit;
+  background-size: 7vh 5vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 20%;
+  margin-right: -4px;
+  border-right: 1px solid #FFF;
+}
+.carousel .index span:last-child {
+  border-right: none;
+}
+.carousel .index span[data-id='eye'] {
+  background-image: url("../img/eye.png");
+}
+.carousel .index span[data-id='ear'] {
+  background-image: url("../img/ear.png");
+  background-size: 4vh 5vh;
+}
+.carousel .index span[data-id='teeth'] {
+  background-image: url("../img/teeth.png");
+  background-size: 4vh 5vh;
+}
+.carousel .index span[data-id='lungs'] {
+  background-image: url("../img/lungs.png");
+  background-size: 6vh 5vh;
+}
+.carousel .index span[data-id='brain'] {
+  background-image: url("../img/brain.png");
+  background-size: 4vh 5vh;
+}

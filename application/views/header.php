@@ -2,9 +2,13 @@
 <html>
 <head>
 	<title>i-health</title>
-<link rel="icon" href="<?php echo base_url('/favicon.ico')?>" type="image/x-icon"/>
-<link rel="shortcut icon" href="<?php echo base_url('/favicon.ico')?>" type="image/x-icon"/>
-<script src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
+    <link rel="icon" href="<?php echo base_url('/favicon.ico')?>" type="image/x-icon"/>
+    <link rel="shortcut icon" href="<?php echo base_url('/favicon.ico')?>" type="image/x-icon"/>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='<?php echo base_url('/css/main.css')?>' rel='stylesheet' type='text/css'>
+
+    <script src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
+    <script src='<?php echo base_url('/js/main.js')?>'></script>
 <!-- Add mousewheel plugin (this is optional) -->
 <script type="text/javascript" src="<?php echo base_url('/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js')?>"></script>
 
