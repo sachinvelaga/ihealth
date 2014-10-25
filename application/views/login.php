@@ -8,6 +8,8 @@
   	width:500px;
   	text-align: center;
   	margin:0 auto;
+  	margin-top: 100px;
+    border : 1px solid #FF8454;
   }
   .submit-button{
   	background: #1ED085 no-repeat;
@@ -33,10 +35,7 @@
 	border-radius: 0;
   }
 </style>
-<div class="home-main-container">
-  <div class="login"><a href="#" class="login-link">Login</a></div> 
-  <div class="login-popup-content" id="login-popup" style="display:none;">
-  <div class="login-container" id="login-container">
+<div class="login-container">
    <div class="login-logo-container">
        <div><img src="<?php echo base_url('/img/web-images/logo.png')?>" alt="logo" class="login-img"></div>
    </div>
@@ -50,19 +49,12 @@
     </div>
   </div>
 </div>
-</div>
-     
-</div>
-
-
 <script type="text/javascript">
-  $(document).ready(function() {
-   $('.login-link').bind('click', function(e) {
-        $.fancybox({ 
-                 type:'inline',
-                content:$("#login-popup").html()
-         }); 
-     });
-  });
-  
+$(document).ready(function(){
+	$(".submit-button").click(function(){
+        alert('hi');
+	})
+})
+
+
 </script>

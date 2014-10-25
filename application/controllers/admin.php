@@ -35,9 +35,9 @@ class Admin extends CI_Controller {
      function render($file, $data = array())
      {
        
-       $this->load->view('agent_header');
+       $this->load->view('admin_header');
        $this->load->view($file,$data);
-       $this->load->view('agent_footer');
+       $this->load->view('admin_footer');
      }
 }
 ?>
