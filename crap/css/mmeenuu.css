@@ -1,0 +1,45 @@
+/* CSSTerm.com Simple CSS menu */
+.serviceimg{
+width: auto; 
+height:auto;
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+border:2px solid #f4f4f4;
+}
+.serviceimg:hover{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+border: 2px solid #A5C451;
+
+}
+.menu_simple ul {
+    margin: 0; 
+    padding: 0;
+    width:100%;
+    list-style-type: none;
+}
+
+.menu_simple ul li {
+padding: 1.5px;
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+border-bottom: 2px solid #dadada;
+}
+
+.menu_simple ul li a {
+    text-decoration: none;
+    padding: 10.5px 11px;  
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background-color: #f4f4f4;  
+    display:block;
+}
+ 
+.menu_simple ul li a:hover {
+	background-color: #f4f4f4;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 4px solid #a5c451 !important;
+    color: green;
+}
+.menu_simple ul li a.sactive {
+	background-color: #f4f4f4;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 4px solid #a5c451 !important;
+    color: green;
+}

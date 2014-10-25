@@ -1,0 +1,381 @@
+
+#slideshow {
+    position:relative;
+    height:350px;
+	z-index:-1;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+#tableserv td.active {
+    z-index:10;
+    opacity:0.5;
+}
+
+#tableserv td.last-active {
+    z-index:9;
+}
+#slideshow img {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+			
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: 101vh;
+			
+	/* Set up positioning */
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+		
+@media screen and (max-width: 1024px){
+	img.bg {
+	left: 50%;
+	margin-left: -512px; 
+}
+}
+		
+#page-wrap { 
+	position: relative;
+	width: 400px; 
+	margin: 50px auto; 
+	padding: 20px; 
+	background: #fff; 
+	-moz-box-shadow: 0 0 20px black; 
+	-webkit-box-shadow: 0 0 20px black; 
+	box-shadow: 0 0 20px black; 
+}
+
+p { 
+	font: 15px/2 Arial; 
+	margin: 0 0 30px 0; 
+	color: #fff;
+}
+
+#content {
+	width: 920px;
+	margin: 0 auto;
+	background: rgba(11,11,11, 0.5);
+	padding: 20px;
+}
+
+#content h1 {
+	text-transform: uppercase;
+	font-family: 'Arial';
+	color: #fff;
+}
+
+#content a {
+	color: #a82711;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #000;
+	padding: 10px;
+}
+
+
+#serv .servact, #serv td:hover{
+	opacity : 0.5;
+	}
+	#serv #eyetd #serv td:hover{
+	opacity : 0.5;
+	}
+.menu_simplemain{
+	list-style: none;
+	text-transform: none;
+	
+	}
+	.menu_simplemain ul{
+	margin:  0px !important;
+	}
+.menu_simplemain ul li{
+	list-style: none;
+	border-right: 3px solid #31d4e7;
+	font-size: 30px;
+	line-height: 60px;
+	}	
+.menu_simplemain li a{
+	padding-left: 4%;
+	color: #31d4e7;
+	}
+	.menu_simplemain ul li.sactive , .menu_simplemain ul li:hover {
+	background:#31d4e7;
+	border-left: transparent #000;
+	border: none !important;
+    color: #FFF;
+}
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent; 
+	float:right;
+	border-right:12px solid white; 
+	margin-top: 18px;
+	display: none;
+}
+.menu_simplemain ul li.sactive a, .menu_simplemain ul li:hover a{
+    color: #FFF;
+}
+
+#menu {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 0 0;
+    list-style: none;  
+}
+
+#menu li {
+    float: right;
+    padding: 4px 4px 10px 0;
+    position: relative;
+}
+
+#menu a {
+    float: left;
+    height: 30px;
+    padding: 0 25px;
+    color: #ffffff;
+	line-height: 35px !important;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#menu li:hover > a {
+  opacity: 1;
+}
+
+*html #menu li a:hover { /* IE6 */
+   opacity: 1;
+}
+#menu li.active > a {
+	border-bottom : 4px solid #31d4e7;
+    color: #31d4e7;
+}
+
+*html #menu li.active a { /* IE6 */
+    background: none repeat scroll 0 0 #A5C451 !important;
+    color: #fff;
+}
+
+#menu li:hover > ul {
+    display: block;
+}
+
+/* Sub-menu */
+#menu ul {
+	width : auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;    
+}
+#menu ul ul
+{
+  top: 0;
+  left: 132px;
+}
+
+
+
+#menu ul li {
+    float: none;
+    margin: 4px;
+	margin-left:0px !important;
+	margin-right: 0px !important;
+    padding: 0;
+    display: block;
+    background-color: #A5C451;   
+}
+
+#menu ul li:last-child { 
+    box-shadow: none;    
+}
+
+#menu ul a {    
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+*html #menu ul a { /* IE6 */   
+    height: 10px;
+    width: 150px;
+}
+
+*:first-child+html #menu ul a { /* IE7 */    
+    height: 10px;
+    width: 150px;
+}
+
+
+
+#menu ul li:first-child a:hover:after {
+    border-bottom-color: #A5C451; 
+}
+
+#menu ul ul li:first-child a:hover:after
+{
+    border-right-color: #A5C451; 
+    border-bottom-color: transparent; 	
+}
+
+
+
+/* Clear floated elements */
+#menu:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.tabsize{
+	width:102px;
+	height:10px;
+	color:#FFFFFF; 
+	text-align:center;
+	 padding-top:0 !important; 
+	 padding-bottom:20px !important;
+	}
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */
+#hadr{
+		height: 64px !important;
+		}
+		#headlogo{
+		height: 66px !important;
+		float:left;
+		padding-left: 2%;
+		}
+		#headdiv{
+		margin-top: 11px !important;
+		}	
+		.servimg1{
+			height: 78px !important;
+			padding-top: 2%;
+			}
+@media screen and (max-width: 590px) {}
+@media screen and (max-width: 766px) {
+	
+		.servimg{
+			height: 25px !important;
+			}
+	#menu {
+		width: 60% !important;
+	}
+	#menu ul li a {
+		font-size:14px !important;
+	}
+	.menu_simplemain ul li {
+		line-height: 24px !important;
+		font-size: 18px !important;
+		}
+	#middle-contantdiv{
+		width:52% !important;
+		top:45% !important;
+		}
+		#middle-contant{
+		font-size:14px !important;
+		}
+		#caption{
+			font-size:24px !important;
+			}
+			#captiontext{
+			font-size:12px !important;
+			line-height: 14px !important;
+			}
+			.servimg1{
+				height: 50px !important;
+				}
+	}
+@media screen and (min-width: 767px) and (max-width: 979px) {
+
+	#menu {
+		width: 47% !important;
+	}
+		#middle-contantdiv{
+		width:52% !important;
+		top:45% !important;
+		}
+		#middle-contant{
+		font-size:18px !important;
+		}
+			#menu ul li a {
+		font-size:14px !important;
+	}
+	.menu_simplemain ul li {
+		line-height: 40px !important;
+		font-size: 24px !important;
+		}
+		.servimg{
+			height: 35px !important;
+			}
+			#caption{
+			font-size:36px !important;
+			}
+			#captiontext{
+			font-size:18px !important;
+			line-height: 20px !important;
+			}
+	}
+@media screen and (min-width: 980px) and (max-width: 1199px), screen and (min-device-width: 980px) and (max-device-width: 1199px) {
+#menu {
+	width: 40% !important;
+	}
+	#middle-contantdiv{
+		width:52% !important;
+		top:45% !important;
+		}
+	#middle-contant{
+		font-size:20px !important;
+		}
+		.servimg{
+			height: 35px !important;
+			}
+			#caption{
+			font-size:42px !important;
+			}
+			#captiontext{
+			font-size:18px !important;
+			line-height: 22px !important;
+			}
+			#menu ul li a {
+		font-size:14px !important;
+	}
+	.menu_simplemain ul li {
+		line-height: 40px !important;
+		font-size: 24px !important;
+		}
+	}
+@media screen and (min-width: 1200px) {
+.servimg{
+			height: 35px !important;
+			}
+	}

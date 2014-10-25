@@ -1,0 +1,42 @@
+/* CSSTerm.com Simple CSS menu */
+.serviceimg{
+width: auto; 
+height:auto;
+border:2px solid #f4f4f4;
+}
+.serviceimg:hover{
+border: 2px solid #A5C451;
+
+}
+.menu_simple ul {
+    margin: 0; 
+    padding: 0;
+    width:100%;
+    list-style-type: none;
+}
+
+.menu_simple ul li {
+padding: 1.5px;
+border-bottom: 2px solid #dadada;
+
+
+
+
+}
+
+.menu_simple ul li a {
+    text-decoration: none;
+    color: white; 
+    padding: 10.5px 11px;  
+	background-color: #f4f4f4;  
+    display:block;
+}
+ 
+.menu_simple ul li a:visited {
+    color: #626262;
+}
+ 
+.menu_simple ul li a:hover, .menu_simple ul li .current {
+    color: white;
+    background-color: #A5C451;
+}
