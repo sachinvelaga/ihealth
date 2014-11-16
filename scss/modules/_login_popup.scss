@@ -1,0 +1,33 @@
+ .login-img {
+  	height: 65px;
+  	width: 185px;
+  	padding-top: 10px;
+  }
+  .login-container{
+  	width:500px;
+  	text-align: center;
+  	margin:0 auto;
+  }
+  .submit-button{
+  	background: #1ED085 no-repeat;
+	border-radius: 0px !important;
+	width: 54% !important;
+	cursor: pointer;
+	-webkit-appearance: button;
+	height: 38px !important;
+	font-size: 16px;
+	font-weight: bolder;
+	color: #ffffff;
+	text-shadow: none !important;
+  }
+  .form-field{
+  	padding: 4px 6px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #555555;
+	vertical-align: middle;
+	width: 50%;
+	height: 35px;
+	border-radius: 0;
+	}

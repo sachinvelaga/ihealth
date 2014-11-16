@@ -9,13 +9,18 @@ class Login extends CI_Controller {
 		$this->load->helper('url');
 		
 	}
-
+      
 	public function index()
 	{
 	   
 	    $this->render('login');
 	}
-  
+   public function login()
+   {
+      
+        
+   	
+   }
    public function render($filename)
     {
 

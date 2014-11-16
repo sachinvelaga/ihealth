@@ -1,60 +1,3 @@
-<style type="text/css">
-  .login-img {
-  	height: 65px;
-  	width: 185px;
-  	padding-top: 10px;
-  }
-  .login-container{
-  	width:500px;
-  	text-align: center;
-  	margin:0 auto;
-  }
-  .submit-button{
-  	background: #1ED085 no-repeat;
-	border-radius: 0px !important;
-	width: 54% !important;
-	cursor: pointer;
-	-webkit-appearance: button;
-	height: 38px !important;
-	font-size: 16px;
-	font-weight: bolder;
-	color: #ffffff;
-	text-shadow: none !important;
-  }
-  .form-field{
-  	padding: 4px 6px;
-	margin-bottom: 10px;
-	font-size: 14px;
-	line-height: 20px;
-	color: #555555;
-	vertical-align: middle;
-	width: 50%;
-	height: 30px;
-	border-radius: 0;
-  }
-</style>
-<div class="home-main-container">
-  <div class="login"><a href="#" class="login-link">Login</a></div> 
-  <div class="login-popup-content" id="login-popup" style="display:none;">
-  <div class="login-container" id="login-container">
-   <div class="login-logo-container">
-       <div><img src="<?php echo base_url('/img/web-images/logo.png')?>" alt="logo" class="login-img"></div>
-   </div>
-  <div class="login-form">
-   <div id="logindiv"> 
-       <p><input type="name" class="form-field" placeholder="User ID"></p>
-	   <p><input type="password" class="form-field" placeholder="Password"></p>
-       <p id="lower">
-	      <input type="submit" value="SIGN IN" class="submit-button">
-		</p>
-    </div>
-  </div>
-</div>
-</div>
-     
-</div>
-
-
 <script type="text/javascript">
   $(document).ready(function() {
    $('.login-link').bind('click', function(e) {
@@ -64,5 +7,55 @@
          }); 
      });
   });
-  
 </script>
+<div id="layout">
+    <header class="site-header">
+        <h1 class="logo">
+            <img src="../img/logo.png">
+        </h1>
+        <nav class="site-nav">
+            <a href="#">Who are we?</a>
+            <a href="#">Contact Us</a>
+            <a href="#" class="login-link">Login</a>
+        </nav>
+    </header>
+    <nav class="carousel">
+        <div class="items">
+            <div class="item fade-in" data-id="eye"></div>
+            <div class="item" data-id="ear"></div>
+            <div class="item" data-id="teeth"></div>
+            <div class="item" data-id="lungs"></div>
+            <div class="item" data-id="brain"></div>
+        </div>
+        <div class="index">
+            <span data-id="eye"></span>
+            <span data-id="ear"></span>
+            <span data-id="teeth"></span>
+            <span data-id="lungs"></span>
+            <span data-id="brain"></span>
+        </div>
+    </nav>
+</div>
+<div class="login-popup-content" id="login-popup" style="display:none;">
+  <script type="text/javascript">
+    $(".fancybox-inner input.submit-button").on("click",function(){
+       alert('123');
+   });
+  </script>
+  <div class="login-container" id="login-container">
+   <div class="login-logo-container">
+       <div><img src="<?php echo base_url('/img/web-images/logo.png')?>" alt="logo" class="login-img"></div>
+   </div>
+  <div class="login-form">
+   <div id="logindiv"> 
+       <p><input type="name" class="form-field" placeholder="User ID"></p>
+     <p><input type="password" class="form-field" placeholder="Password"></p>
+       <p id="lower">
+        <input type="button" value="SIGN IN" class="submit-button">
+    </p>
+    </div>
+  </div>
+</div>
+</div>
+
+

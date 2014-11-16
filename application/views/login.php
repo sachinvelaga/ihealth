@@ -31,7 +31,7 @@
 	color: #555555;
 	vertical-align: middle;
 	width: 50%;
-	height: 30px;
+	height: 35px;
 	border-radius: 0;
   }
 </style>
