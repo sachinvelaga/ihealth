@@ -1,28 +1,6 @@
-<!-- <<<<<<< HEAD
-<script type="text/javascript">
-  $(document).ready(function() {
-   $('.login-link').bind('click', function(e) {
-        $.fancybox({ 
-                 type:'inline',
-                content:$("#login-popup").html()
-         }); 
-     });
-  });
-</script>
-<div id="layout">
-    <header class="site-header">
-        <h1 class="logo">
-            <img src="../img/logo.png">
-        </h1>
-        <nav class="site-nav">
-            <a href="#">Who are we?</a>
-            <a href="#">Contact Us</a>
-            <a href="#" class="login-link">Login</a>
-======= -->
     <style type="text/css">
     .our-team-saying-heading {
         width: 100%;
-        /*height: 20vh;*/
         height: 137px;
         background: #2ecc71;
         text-align: center;
@@ -494,7 +472,7 @@
             <nav class="site-nav">
                 <a href="">Who are we?</a>
                 <a href="">Contact Us</a>
-                <a href="">Login</a>
+                <a class="login-link" href="#">Login</a>
             </nav>
         </header>
         <nav class="carousel">
@@ -602,8 +580,7 @@
                 </div>
 
             </div>
-<!-- >>>>>>> 356ace51569c4c092853496909ba25bfd1b937f1
- -->        </nav>
+        </nav>
 
 
         <div class="our-team-saying-desc-container">
@@ -820,33 +797,25 @@
 
             </div>
         </div>
-<!-- <<<<<<< HEAD -->
-    </nav>
-</div>
-<div class="login-popup-content" id="login-popup" style="display:none;">
-  <script type="text/javascript">
-    $(".fancybox-inner input.submit-button").on("click",function(){
-       alert('123');
-   });
-  </script>
-  <div class="login-container" id="login-container">
-   <div class="login-logo-container">
-       <div><img src="<?php echo base_url('/img/web-images/logo.png')?>" alt="logo" class="login-img"></div>
-   </div>
-  <div class="login-form">
-   <div id="logindiv"> 
-       <p><input type="name" class="form-field" placeholder="User ID"></p>
-     <p><input type="password" class="form-field" placeholder="Password"></p>
-       <p id="lower">
-        <input type="button" value="SIGN IN" class="submit-button">
-    </p>
-    </div>
-  </div>
-</div>
-</div>
 
-
-<!-- ======= -->
+        <!-- login popup start -->
+        <div class="login-popup-content" id="login-popup" style="display:none;">
+            <div class="login-container" id="login-container">
+                <div class="login-logo-container">
+                   <div>
+                        <img src="<?php echo base_url('/img/web-images/logo.png')?>" alt="logo" class="login-img">
+                    </div>
+                </div>
+                <div class="login-form">
+                    <div id="logindiv"> 
+                        <p><input type="name" class="form-field" placeholder="User ID"></p>
+                        <p><input type="password" class="form-field" placeholder="Password"></p>
+                        <p id="lower"><input type="button" value="SIGN IN" class="submit-button"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login popup end -->
 
         <div class="be-happy-be-healthy-main-container">
             <div class="be-happy-be-healthy-sub-container">
@@ -879,6 +848,16 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
+            $('.login-link').bind('click', function(e) {
+                $.fancybox({ 
+                         type:'inline',
+                        content:$("#login-popup").html()
+                 }); 
+             });
+
+            $(".fancybox-inner input.submit-button").on("click",function(){
+                   alert('123');
+            });
 
             function setWhatWeDoContainerWidth () {
                 var get_what_we_do_icon_width = 95;
@@ -992,10 +971,16 @@
                 $(".what-we-do-icon").css("opacity","0.5");
             });
 
-            $(".slide-icon-container span").click(function() {
+            $(".slide-icon-container span").click(function(e) {
+
+                //set offset to top
+                var class_name = e.currentTarget.className;
+                $('html,body').animate({
+                        scrollTop: $("."+class_name).offset().top},
+                1000);
+
+                //add fade in and fade out for next slides
                 var getCurrentIcon = $(this).attr("class");
-               /* $(".common-slide-desc").css("opacity","0");
-                $("#" + getCurrentIcon).css("opacity","1");*/
                 $(".common-slide-desc").fadeOut(500);
                 $("#" + getCurrentIcon).fadeIn(1000);
 
@@ -1011,14 +996,5 @@
             scrollTop: $(".our-team-saying-desc-main-container").offset().top},
             1000);
     })
-    $(".slide-icon-container span").click(function(e){
-      //  alert(e.currentTarget.className);
-       // alert(class_name);
-       var class_name = e.currentTarget.className;
-       $('html,body').animate({
-            scrollTop: $("."+class_name).offset().top},
-            1000);
-    });
-
     </script>
-<!-- >>>>>>> 356ace51569c4c092853496909ba25bfd1b937f1 -->
+
