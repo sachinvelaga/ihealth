@@ -859,15 +859,23 @@
                    alert('123');
             });
 
-            function setWhatWeDoContainerWidth () {
+            function setWhatWeDoContainerDimentions () {
+                //set width
                 var get_what_we_do_icon_width = 95;
                 var getLeftRightIconWidth = get_what_we_do_icon_width * 2;
                 var setCentered_what_wedo_width = $(window).width() - getLeftRightIconWidth;
                 $(".centered-what-we-do-desc, .what-we-do-1").css("width",setCentered_what_wedo_width);
+
+                //set height
+                var TopBottomHeight = 110;
+                var getTopBottomHeight = TopBottomHeight * 2;
+                var setCentered_what_wedo_height = $(window).height() - getTopBottomHeight;
+                $(".what-we-do-2").css("height",setCentered_what_wedo_height);
+
             }
-            setWhatWeDoContainerWidth();
+            setWhatWeDoContainerDimentions();
             $(window).resize(function() {
-                setWhatWeDoContainerWidth();
+                setWhatWeDoContainerDimentions();
             });
 
             $(window).scroll(function() {
