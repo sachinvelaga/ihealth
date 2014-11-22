@@ -8,20 +8,20 @@
         color: #FFFFFF;    
     }
     .rounded-circle {
-        width: 100px;
+        width: 80px;
         border-radius: 100%;
         background-color: green;
-        height: 100px;
+        height: 80px;
         margin: 0px auto;
     }
     .rounded-circle img {
-        margin-top: 30px;
+        margin-top: 22px;
     }
     .our-team-saying-desc-main-container {
         width: 100%;
         height: 100vh;
         background: url(img/doct.png) no-repeat 100%;
-        background-size: cover;
+        /*background-size: cover;*/
         display: table;
         position: relative;
         overflow: hidden;
@@ -463,6 +463,15 @@
       transition: left 0.5s ease-out;
     }
 
+    .what-our-team-saying-for-future {
+        height: 8vh;
+        background: #2ecc71;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 16px;
+        font-size: 18px;
+    }
+
     </style>
     <div id="layout">
         <header class="site-header">
@@ -591,6 +600,8 @@
             </div>
             <div class="our-team-saying-desc-main-container">  
                 <div class="our-team-saying-individual-desc-container clearfix">
+
+                    <div class="what-our-team-saying-for-future">We strive for healthy next generation! </div>
 
                     <div class="what-our-team-saying-heading">what our team saying...</div>
 
