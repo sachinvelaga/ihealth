@@ -1,21 +1,24 @@
     <style type="text/css">
     .our-team-saying-heading {
         width: 100%;
-        height: 137px;
+        height: 260px;
         background: #2ecc71;
         text-align: center;
-        padding-top: 1%;
         color: #FFFFFF;    
     }
     .rounded-circle {
-        width: 80px;
+        width: 160px;
         border-radius: 100%;
-        background-color: green;
-        height: 80px;
+        background-color: #27ae60;
+        height: 160px;
         margin: 0px auto;
+        display: inline-block;
+        margin-top: 16px;
     }
     .rounded-circle img {
-        margin-top: 22px;
+        margin-top: 30px;
+        width: 100px;
+        height: 100px;
     }
     .our-team-saying-desc-main-container {
         width: 100%;
@@ -30,17 +33,22 @@
         color: #2ecc71;
         font-size: 48px;
         padding-bottom: 2%;
-        padding-left: 5%;   
+        padding-left: 5%;  
+        font-family: "rock"; 
+        padding-top: 60px;
     }
     .our-team-saying-desc {
-        width: 250px;
-        border: 2px solid #2ecc71;
+        width: 256px;
+        border: 2px solid #2ecc71;  
+        height: 400px;
         font-size: 14px;
         float: left;
         margin-right: 5%;
         background-color: white;
-        padding: 3%;
+        padding: 40px;
         position: relative;
+        font-size: 20px;
+        font-family: "rock";
     }
     /* clear fix */
     .clear:before,
@@ -121,8 +129,8 @@
       width: 0;
     }
     .our-team-saying-desc:hover .overlay {
-      border-bottom: 100px solid #2ecc71;
-      border-left: 100px solid transparent;
+      border-bottom: 70px solid #2ecc71;
+      border-left: 70px solid transparent;
       -moz-transition: all 0.5s ease-out;
       -o-transition: all 0.5s ease-out;
       -webkit-transition: all 0.5s ease-out;
@@ -405,7 +413,7 @@
 
     .health-slideshow-container {
         width: 100%;
-        height: 500px;
+        height: 85vh    ;
         overflow: hidden;
         position: relative;
     }
@@ -432,6 +440,7 @@
     .health-slide-img {
         float: left;
         width: 30%;
+        margin-left: 32px;
     }
     .health-slide-img-desc {
         float: left;
@@ -446,6 +455,7 @@
         color: #31d4e7;
         margin-bottom: 50px;
         padding-left:32px;
+        font-family: "rock";
     }
 
     /* add arrow to second slideshow */
@@ -469,10 +479,36 @@
         text-align: center;
         color: #FFFFFF;
         padding-top: 16px;
-        font-size: 18px;
+        font-size: 20px;
+        font-family: "Proxima Nova Regular";
+    }
+
+    .slide-cintent1 {
+        font-size:18px;  
+        line-height:30px;
+        font-family: 'Proxima Nova Regular';
+    }
+    .slide-cintent2 {
+        font-size:24px;
+        font-family: 'rock';
+        line-height: 36px;
+    }
+    .slide-cintent3 {
+        font-size:18px; 
+        line-height:30px; 
+        padding-top:10px;
+        font-family: 'Proxima Nova Regular';
+    }
+    .overlay-content img {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+        margin-right: 10px;
     }
 
     </style>
+    <link rel="stylesheet" type="text/css" href="../../fonts/rock/font.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts/proxima-nova-rg/style.css">
     <div id="layout">
         <header class="site-header">
             <h1 class="logo">
@@ -511,10 +547,10 @@
                         <div class="health-slide-img"><img src="img/slideshow/eye.jpg" /></div>
                         <div class="health-slide-img-desc">
                             <div>
-                                <div style="font-size:18px;  line-height:30px;">Your child's eyes see a beautiful world. However, modern day education and the new age kid (what with all the hours in front of all kinds of screens) make for ever decreasing eye-health. 
+                                <div class="slide-cintent1">Your child's eyes see a beautiful world. However, modern day education and the new age kid (what with all the hours in front of all kinds of screens) make for ever decreasing eye-health. 
                                 </div>
-                                <div style="padding-top: 20px;font-size:24px;">"Surveys show that 10-15 in every 100 children have vision defects and 70% of these children are unaware of their abnormality."</div>
-                                <div style="font-size:18px; line-height:30px; padding-top:10px;"> We truly understand the required eye-care for your cild. In entirely non-invasive and non-mediatric fashion, we check for all the essentials in quick time. We all wish to see the world through a child's eyes, don't we?</div>
+                                <div class="slide-cintent2">"Surveys show that 10-15 in every 100 children have vision defects and 70% of these children are unaware of their abnormality."</div>
+                                <div class="slide-cintent3"> We truly understand the required eye-care for your cild. In entirely non-invasive and non-mediatric fashion, we check for all the essentials in quick time. We all wish to see the world through a child's eyes, don't we?</div>
                             </div>
                         </div>
                     </div>
@@ -528,10 +564,10 @@
                         <div class="health-slide-img"><img src="img/slideshow/ear.jpg" /></div>
                         <div class="health-slide-img-desc">
                             <div>
-                                <div style="font-size:18px;  line-height:30px;">Hearing disabilities are often the silent killers. In a child, these are often the most easy to neglect and consequently the most difficult to identify or cure. When was the last time you even wondered about how your child's hearing abilities are doing these days? 
+                                <div class="slide-cintent1">Hearing disabilities are often the silent killers. In a child, these are often the most easy to neglect and consequently the most difficult to identify or cure. When was the last time you even wondered about how your child's hearing abilities are doing these days? 
                                 </div>
-                                <div style="padding-top: 20px;font-size:24px;">""At least 12-14% children have hard wax or ear infection or drainage, all of which could affect their hearing abilities."</div>
-                                <div style="font-size:18px; line-height:30px; padding-top:10px;"> We truly understand the required eye-care for your cild. In entirely non-invasive and non-mediatric fashion, we check for all the essentials in quick time. We all wish to see the world through a child's eyes, don't we?</div>
+                                <div class="slide-cintent2">""At least 12-14% children have hard wax or ear infection or drainage, all of which could affect their hearing abilities."</div>
+                                <div class="slide-cintent3"> We truly understand the required eye-care for your cild. In entirely non-invasive and non-mediatric fashion, we check for all the essentials in quick time. We all wish to see the world through a child's eyes, don't we?</div>
                             </div>
                         </div>
                     </div>
@@ -545,10 +581,10 @@
                         <div class="health-slide-img"><img src="img/slideshow/teeth.jpg" /></div>
                         <div class="health-slide-img-desc">
                             <div>
-                                <div style="font-size:18px;  line-height:30px;">Your child's eyes see a beautiful world. However, modern day education and the new age kid (what with all the hours in front of all kinds of screens) make for ever decreasing eye-health. 
+                                <div class="slide-cintent1">Your child's eyes see a beautiful world. However, modern day education and the new age kid (what with all the hours in front of all kinds of screens) make for ever decreasing eye-health. 
                                 </div>
-                                <div style="padding-top: 20px;font-size:24px;">"Surveys show that 10-15 in every 100 children have vision defects and 70% of these children are unaware of their abnormality."</div>
-                                <div style="font-size:18px; line-height:30px; padding-top:10px;"> We truly understand the required eye-care for your cild. In entirely non-invasive and non-mediatric fashion, we check for all the essentials in quick time. We all wish to see the world through a child's eyes, don't we?</div>
+                                <div class="slide-cintent2">"Surveys show that 10-15 in every 100 children have vision defects and 70% of these children are unaware of their abnormality."</div>
+                                <div class="slide-cintent3"> We truly understand the required eye-care for your cild. In entirely non-invasive and non-mediatric fashion, we check for all the essentials in quick time. We all wish to see the world through a child's eyes, don't we?</div>
                             </div>
                         </div>
                     </div>
@@ -562,10 +598,10 @@
                         <div class="health-slide-img"><img src="img/slideshow/lungs.jpg" /></div>
                         <div class="health-slide-img-desc">
                             <div>
-                                <div style="font-size:18px;  line-height:30px;">Your child's eyes see a beautiful world. However, modern day education and the new age kid (what with all the hours in front of all kinds of screens) make for ever decreasing eye-health. 
+                                <div class="slide-cintent2">Your child's eyes see a beautiful world. However, modern day education and the new age kid (what with all the hours in front of all kinds of screens) make for ever decreasing eye-health. 
                                 </div>
-                                <div style="padding-top: 20px;font-size:24px;">"Surveys show that 10-15 in every 100 children have vision defects and 70% of these children are unaware of their abnormality."</div>
-                                <div style="font-size:18px; line-height:30px; padding-top:10px;"> We truly understand the required eye-care for your cild. In entirely non-invasive and non-mediatric fashion, we check for all the essentials in quick time. We all wish to see the world through a child's eyes, don't we?</div>
+                                <div class="slide-cintent2">"Surveys show that 10-15 in every 100 children have vision defects and 70% of these children are unaware of their abnormality."</div>
+                                <div class="slide-cintent3"> We truly understand the required eye-care for your cild. In entirely non-invasive and non-mediatric fashion, we check for all the essentials in quick time. We all wish to see the world through a child's eyes, don't we?</div>
                             </div>
                         </div>
                     </div>
@@ -579,10 +615,10 @@
                         <div class="health-slide-img"><img src="img/slideshow/teeth.jpg" /></div>
                         <div class="health-slide-img-desc">
                             <div>
-                                <div style="font-size:18px;  line-height:30px;">Your child's eyes see a beautiful world. However, modern day education and the new age kid (what with all the hours in front of all kinds of screens) make for ever decreasing eye-health. 
+                                <div class="slide-cintent1">Your child's eyes see a beautiful world. However, modern day education and the new age kid (what with all the hours in front of all kinds of screens) make for ever decreasing eye-health. 
                                 </div>
-                                <div style="padding-top: 20px;font-size:24px;">"Surveys show that 10-15 in every 100 children have vision defects and 70% of these children are unaware of their abnormality."</div>
-                                <div style="font-size:18px; line-height:30px; padding-top:10px;"> We truly understand the required eye-care for your cild. In entirely non-invasive and non-mediatric fashion, we check for all the essentials in quick time. We all wish to see the world through a child's eyes, don't we?</div>
+                                <div class="slide-cintent2">"Surveys show that 10-15 in every 100 children have vision defects and 70% of these children are unaware of their abnormality."</div>
+                                <div class="slide-cintent3"> We truly understand the required eye-care for your cild. In entirely non-invasive and non-mediatric fashion, we check for all the essentials in quick time. We all wish to see the world through a child's eyes, don't we?</div>
                             </div>
                         </div>
                     </div>
@@ -595,42 +631,41 @@
         <div class="our-team-saying-desc-container">
             <div class="our-team-saying-heading">
                 <div class="rounded-circle">
-                    <img src="http://www.grsno.org/iconfile/update_empty.gif" />
+                    <img src="img/svgfiles/plus.svg" />
                 </div>
+                <div class="what-our-team-saying-for-future">We strive for healthy next generation! </div>
             </div>
             <div class="our-team-saying-desc-main-container">  
                 <div class="our-team-saying-individual-desc-container clearfix">
 
-                    <div class="what-our-team-saying-for-future">We strive for healthy next generation! </div>
-
-                    <div class="what-our-team-saying-heading">what our team saying...</div>
+                    <div class="what-our-team-saying-heading">What they are saying...</div>
 
                     <div class="our-team-saying-desc team-member-1">  
                         <div class="team-member-saying-desc-container">
-                            I take great pleasure in mentoring the teams at i-health. Being a parent, my utmost priority towards my child is her health and wellbeing. In spite of the acquaintance with medical practices, I fear to miss at times towards monitoring of my child vitals on regular basis. In present system, the children are exposed to many threats which may have adverse effect on healthy being at later stages of life. Children are... 
+                            I take great pleasure in mentoring the teams at i-health. Being a parent, my utmost priority pleasure in at i-health Being a parent, i-health Being a my utmost priority pleasure Being a parent, my utmost towards... 
                         </div>
 
                         <div class="overlay"></div>
                         <div class="overlay-content">
-                           abc info
+                           <img src="img/svgfiles/plus circle.svg" />
                         </div>
                     </div>
                     <div class="our-team-saying-desc team-member-2">  
                         <div class="team-member-saying-desc-container">
-                            It is a matter of pride for me, to be part of this great initiative for preventive medication for children. Ever so often, we come across paediatric patients in a very advanced stage of abnormality; those that could have easily been diagnosed and cured with minimal pain and effort, at a much earlier stage. The essential difficulty with paediatrics is that children don't recognize the abnormality...
+                            I take great pleasure in mentoring the teams at i-health. Being a parent, my utmost priority pleasure in at i-health Being a parent, my utmost priority pleasure Being a parent,i-health Being a my utmost towards... 
                         </div>
                         <div class="overlay"></div>
                         <div class="overlay-content">
-                           abc info
+                           <img src="img/svgfiles/plus circle.svg" />
                         </div>
                     </div>
                     <div class="our-team-saying-desc team-member-3">  
                             <div class="team-member-saying-desc-container">
-                            We've all heard the saying, "Prevention is better than cure". Nevertheless, not many of us really act accordingly. One example lies in the way we raise our children in the modern day. Be it due to a lack of awareness or constraints of time or the unavailability of appropriate technological or medical solutions, we constantly jeopardize the well-being of our children. And that too, in times when we ought....
+                            I take great pleasure in mentoring the teams at i-health. Being a parent, my utmost priority pleasure in at i-health Being a parent, my utmost priority pleasure Being a parent, my utmost i-health Being a towards... 
                         </div>
                         <div class="overlay"></div>
                         <div class="overlay-content">
-                           abc info
+                           <img src="img/svgfiles/plus circle.svg" />
                         </div>
                     </div>
                 </div>
@@ -901,7 +936,7 @@
                 if(scrollTop >= getTotalScrollHeight) {
                     function animateTraingular() {
                         var borderRightWidth = $(window).width() + 200;
-                        var borderBottomWidth = $(window).height() - 100;
+                        var borderBottomWidth = $(window).height() - 140;
                         $(".addAnimateTraingular").css("border-right-width", borderRightWidth);
                         $(".addAnimateTraingular").css("border-bottom-width", borderBottomWidth);    
                     }

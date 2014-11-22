@@ -26,9 +26,6 @@ a {
   text-decoration: none;
   font-size: 13px;
 }
-a:hover {
-  text-decoration: underline;
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
@@ -102,18 +99,22 @@ hr {
 .site-header .site-nav {
   float: right;
   margin: 17px 0 0 0;
+  font-family: "rock";
 }
 .site-header .site-nav a {
   color: #2C3E50;
   font-size: 16px;
   margin-left: 35px;
 }
+.site-header .site-nav a:active {
+  color: #2ecc71;
+}
 
 .carousel {
   height: 100vh;
 }
 .carousel .items {
-  height: 93vh;
+  height: 86vh;
   overflow: hidden;
 }
 .carousel .item {
@@ -145,13 +146,13 @@ hr {
   opacity: 0;
 }
 .carousel .index {
-  height: 7vh;
+  height: 14vh;
   background: #31D4E7;
 }
 .carousel .index span {
   display: inline-block;
   height: inherit;
-  background-size: 7vh 5vh;
+  background-size: 20vh 7vh;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 20%;
@@ -162,23 +163,19 @@ hr {
   border-right: none;
 }
 .carousel .index span[data-id='eye'] {
-  background-image: url("../img/eye.png");
+  background-image: url("../img/svgfiles/eye.svg");
 }
 .carousel .index span[data-id='ear'] {
-  background-image: url("../img/ear.png");
-  background-size: 4vh 5vh;
+  background-image: url("../img/svgfiles/ear.svg");
 }
 .carousel .index span[data-id='teeth'] {
-  background-image: url("../img/teeth.png");
-  background-size: 4vh 5vh;
+  background-image: url("../img/svgfiles/teeth.svg");
 }
 .carousel .index span[data-id='lungs'] {
-  background-image: url("../img/lungs.png");
-  background-size: 6vh 5vh;
+  background-image: url("../img/svgfiles/lungs.svg");
 }
 .carousel .index span[data-id='brain'] {
-  background-image: url("../img/brain.png");
-  background-size: 4vh 5vh;
+  background-image: url("../img/svgfiles/brain.svg");
 }
 
 .login-img {
