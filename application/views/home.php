@@ -190,10 +190,10 @@
     }
     .addBackground {
       background-color: #34495e;
-      -moz-transition: background-color 0.3s linear 1s;
-      -o-transition: background-color 0.3s linear 1s;
-      -webkit-transition: background-color 0.3s linear 1s;
-      transition: background-color 0.3s linear 1s;
+      -moz-transition: background-color 0.2s linear;
+      -o-transition: background-color 0.2s linear;
+      -webkit-transition: background-color 0.2s linear;
+      transition: background-color 0.2s linear;
     }
 
 
@@ -244,10 +244,10 @@
 
     /* remove delay in opacity when click */ 
     .what-we-do-click-loading {
-        -moz-transition: opacity 0.5s linear;
-        -o-transition: opacity 0.5s linear;
-        -webkit-transition: opacity 0.5s linear;
-        transition: opacity 0.5s linear;   
+        -moz-transition: opacity 0.1s linear;
+        -o-transition: opacity 0.1s linear;
+        -webkit-transition: opacity 0.1s linear;
+        transition: opacity 0.1s linear;   
     }
 
     .what-we-do-hidden-div {
@@ -363,54 +363,54 @@
         width: 100%;
         height: 0%;
         overflow: hidden;
-        -moz-transition: height 0.3s linear;
-        -o-transition: height 0.3s linear;
-        -webkit-transition: height 0.3s linear;
-        transition: height 0.3s linear;
+        -moz-transition: height 0.2s linear;
+        -o-transition: height 0.2s linear;
+        -webkit-transition: height 0.2s linear;
+        transition: height 0.2s linear;
     }
 
 
     .showCurrentDiv.UpDownToggleIcon1Desc {
         height: 100% !important;
-         -moz-transition: height 0.3s linear;
-        -o-transition: height 0.3s linear;
-        -webkit-transition: height 0.3s linear;
-        transition: height 0.3s linear;
+         -moz-transition: height 0.2s linear;
+        -o-transition: height 0.2s linear;
+        -webkit-transition: height 0.2s linear;
+        transition: height 0.2s linear;
     }
 
     /* for 3rd icon */
     #what-we-do-icon3 {
         overflow: hidden;
         left: -100%;
-        -moz-transition: left 0.3s linear;
-        -o-transition: left 0.3s linear;
-        -webkit-transition: left 0.3s linear;
-        transition: left 0.3s linear;
+        -moz-transition: left 0.2s linear;
+        -o-transition: left 0.2s linear;
+        -webkit-transition: left 0.2s linear;
+        transition: left 0.2s linear;
     }
 
     .showCurrentDiv.UpDownToggleIcon3Desc {
         left: 0% !important;
-         -moz-transition: left 0.3s linear;
-        -o-transition: left 0.3s linear;
-        -webkit-transition: left 0.3s linear;
-        transition: left 0.3s linear;
+         -moz-transition: left 0.2s linear;
+        -o-transition: left 0.2s linear;
+        -webkit-transition: left 0.2s linear;
+        transition: left 0.2s linear;
     }
 
     /* for 4th icon */
     #what-we-do-icon4 {
         overflow: hidden;
         left: 100%;
-        -moz-transition: left 0.3s linear;
-        -o-transition: left 0.3s linear;
-        -webkit-transition: left 0.3s linear;
-        transition: left 0.3s linear;
+        -moz-transition: left 0.2s linear;
+        -o-transition: left 0.2s linear;
+        -webkit-transition: left 0.2s linear;
+        transition: left 0.2s linear;
     }
     .showCurrentDiv.UpDownToggleIcon4Desc {
         left: 0% !important;
-        -moz-transition: left 0.3s linear;
-        -o-transition: left 0.3s linear;
-        -webkit-transition: left 0.3s linear;
-        transition: left 0.3s linear;
+        -moz-transition: left 0.2s linear;
+        -o-transition: left 0.2s linear;
+        -webkit-transition: left 0.2s linear;
+        transition: left 0.2s linear;
     }
 
 
@@ -418,17 +418,17 @@
     #what-we-do-icon5, #what-we-do-icon6 {
         overflow: hidden;
         top: 100%;
-        -moz-transition: top 0.3s linear;
-        -o-transition: top 0.3s linear;
-        -webkit-transition: top 0.3s linear;
-        transition: top 0.3s linear;
+        -moz-transition: top 0.2s linear;
+        -o-transition: top 0.2s linear;
+        -webkit-transition: top 0.2s linear;
+        transition: top 0.2s linear;
     }
     .showCurrentDiv.UpDownToggleIcon56Desc {
         top: 0% !important;
-         -moz-transition: top 0.3s linear;
-        -o-transition: top 0.3s linear;
-        -webkit-transition: top 0.3s linear;
-        transition: top 0.3s linear;
+         -moz-transition: top 0.2s linear;
+        -o-transition: top 0.2s linear;
+        -webkit-transition: top 0.2s linear;
+        transition: top 0.2s linear;
     }
 
 
@@ -1376,7 +1376,7 @@
                     $(this).addClass("selected-icon");
                     var getSelectedDataId = $(".selected-icon").attr("data-id");
                     //$("#" + getSelectedDataId).delay(5000).addClass("showCurrentDiv");
-                    $("#" + getSelectedDataId).delay(1000).queue(function(){
+                    $("#" + getSelectedDataId).delay(500).queue(function(){
                         $(this).addClass("showCurrentDiv");
                         $(this).dequeue();
                     });
