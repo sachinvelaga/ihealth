@@ -260,7 +260,15 @@
         height: 84vh;
         background-image: url(img/child.jpg);
         background-size: 100% 100%;
+        display: table;
     } 
+    .be-happy-be-healthy-sub-container {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-family: "rock";
+        font-size: 48px;
+    }
 
     .ihealth-footer-main-container {
         background-color: #2ecc71;
@@ -272,6 +280,10 @@
         float: left;
         padding: 0px;
         padding-right: 70px;
+        margin: 0px;
+    }
+    .footer-updates {
+        float: left;
     }
     .footer-common-list li {
         text-decoration: none;
@@ -279,8 +291,21 @@
         margin-bottom: 10px;
     }
     .ihealth-footer-sub-container {
-        width: 700px;
+        width: 440px;
         margin: 0px auto;
+        padding-top: 20px;
+    }
+    .footer-social-icon-name {
+        position: relative;
+        top: -5px;
+    }
+    .footer-social-icon {
+        width: 24px;
+        height: 24px;
+    }
+    .get-update {
+        color: white;
+        margin-bottom: 10px;
     }
 
     /*  animate what we do container */ 
@@ -560,6 +585,7 @@
     .what-we-do-individual-desc {
         font-size: 16px;
         font-family: 'Proxima Nova Regular';
+        color: #969fa8;
     }
     .default-align-middle {
         display: table-cell;
@@ -1165,7 +1191,7 @@
 
         <div class="be-happy-be-healthy-main-container">
             <div class="be-happy-be-healthy-sub-container">
-
+                Be Healthy. Be Happy.
             </div>
         </div>
 
@@ -1183,10 +1209,11 @@
                     <li>Doctors</li>
                 </ul>
                 <ul class="footer-common-list">
-                    <li><span></span><span>Facebook</span></li>
-                    <li><span></span><span>Twitter</span></li>
-                    <li><span></span><span>Google</span></li>
+                    <li><span><img class="footer-social-icon" src="../img/social-icons/facebook.png" /></span><span class="footer-social-icon-name">Facebook</span></li>
+                    <li><span><img class="footer-social-icon" src="../img/social-icons/twitter.png" /></span><span class="footer-social-icon-name">Twitter</span></li>
+                    <li><span><img class="footer-social-icon" src="../img/social-icons/gp.png" /></span><span class="footer-social-icon-name">Google</span></li>
                 </ul>
+
             </div>
         </footer>
 
