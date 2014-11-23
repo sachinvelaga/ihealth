@@ -23,8 +23,8 @@
     .our-team-saying-desc-main-container {
         width: 100%;
         height: 100vh;
-        background: url(img/doct.png) no-repeat 100%;
-        /*background-size: cover;*/
+        background: url(img/svgfiles/doctor.svg) no-repeat 100%;
+        background-size: 28% 80%;
         display: table;
         position: relative;
         overflow: hidden;
@@ -189,7 +189,7 @@
       height: 400px;
     }
     .addBackground {
-      background-color: #1C381E;
+      background-color: #34495e;
       -moz-transition: background-color 0.3s linear 1s;
       -o-transition: background-color 0.3s linear 1s;
       -webkit-transition: background-color 0.3s linear 1s;
@@ -253,7 +253,7 @@
         width: 100%;
         height: 100%;
         /*opacity: 0;*/
-        background-color: #1C381E;
+        background-color: #34495e;
     }
     .be-happy-be-healthy-main-container {
         width: 100%;
@@ -288,12 +288,14 @@
     /* what we do default div */
     .what-we-do-heading {
         text-align: center;
-        font-size: 25px;
+        font-size: 48px;
+        font-family: "rock";
         color: #55afaf;
     }
     .what-we-do-sub-heading {
         text-align: center;
-        font-size: 20px;
+        font-size: 24px;
+        font-family: "rock";
         color: #333333;
         margin-bottom: 20px;
     }
@@ -303,19 +305,20 @@
         float: left;
     }
     .what-we-do-individual-heading {
-        font-size: 20px;
+        font-size: 24px;
+        font-family: "rock";
         color: #333333;
         margin-bottom: 10px;
     }
 
     .what-we-do-sub-container-default {
         height: 100%;
-        padding: 30px;
         opacity: 0;
         -moz-transition: opacity 0.5s linear 0.5s;
         -o-transition: opacity 0.5s linear 0.5s;
         -webkit-transition: opacity 0.5s linear 0.5s;
         transition: opacity 0.5s linear 0.5s;
+        display: table;
     }
     .what-we-do-sub-container-default-animation {
         opacity: 1;
@@ -347,22 +350,20 @@
 
     /* for 3rd icon */
     #what-we-do-icon3 {
-        width: 0%;
-        height: 100%;
         overflow: hidden;
-        -moz-transition: width 0.3s linear;
-        -o-transition: width 0.3s linear;
-        -webkit-transition: width 0.3s linear;
-        transition: width 0.3s linear;
+        left: -100%;
+        -moz-transition: left 0.3s linear;
+        -o-transition: left 0.3s linear;
+        -webkit-transition: left 0.3s linear;
+        transition: left 0.3s linear;
     }
 
-
     .showCurrentDiv.UpDownToggleIcon3Desc {
-        width: 100% !important;
-         -moz-transition: width 0.3s linear;
-        -o-transition: width 0.3s linear;
-        -webkit-transition: width 0.3s linear;
-        transition: width 0.3s linear;
+        left: 0% !important;
+         -moz-transition: left 0.3s linear;
+        -o-transition: left 0.3s linear;
+        -webkit-transition: left 0.3s linear;
+        transition: left 0.3s linear;
     }
 
     /* for 4th icon */
@@ -505,10 +506,71 @@
         margin-bottom: 10px;
         margin-right: 10px;
     }
+    .about-health-heading1 {
+        font-size: 36px;
+        color: white;
+        font-family: "rock";
+    }
+    .about-health-heading2 {
+        font-size: 24px;
+        color: #a4a4a4;
+        font-family: "rock";
+    }
+    .individual-part-icon span {
+        font-size: 20px;
+        font-family: "rock";
+        color: white;
+        float: left;
+    }
+    .individual-part-icon-desc {
+        font-family: 'Proxima Nova Regular';
+        color: #969fa8;
+        font-size: 14px;
+    }
+    .individual-part {
+        width: 282px;
+        background-color: #2c3e50;
+        float: left;
+        margin-right: 20px;
+        margin-top: 20px;
+        height: 122px;
+        padding: 10px;
+    }
+    .individual-part-icon span img {
+        width: 20px;
+        margin-right: 10px;
+    }
+    .individual-part-icon {
+        margin-bottom: 10px;
+    }
+    .what-we-do-padding {
+        padding-left: 40px;
+    }
+    .what-we-do-individual-desc-container {
+        float: left;
+        width: 33%;
+        padding: 5%;
+        text-align: center;
+    }
+    .what-we-do-default-vertical-line {
+        border-right: 1px solid rgb(229, 229, 229);
+        float: left;
+        margin-top: 4%;
+    }
+    .what-we-do-individual-desc {
+        font-size: 16px;
+        font-family: 'Proxima Nova Regular';
+    }
+    .default-align-middle {
+        display: table-cell;
+        vertical-align: middle;
+    }
 
     </style>
     <link rel="stylesheet" type="text/css" href="../../fonts/rock/font.css">
     <link rel="stylesheet" type="text/css" href="../../fonts/proxima-nova-rg/style.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts/font-awesome/css/font-awesome.min.css">
     <div id="layout">
         <header class="site-header">
             <h1 class="logo">
@@ -647,7 +709,7 @@
 
                         <div class="overlay"></div>
                         <div class="overlay-content">
-                           <img src="img/svgfiles/plus circle.svg" />
+                           <img src="img/svgfiles/plus_circle.svg" />
                         </div>
                     </div>
                     <div class="our-team-saying-desc team-member-2">  
@@ -656,7 +718,7 @@
                         </div>
                         <div class="overlay"></div>
                         <div class="overlay-content">
-                           <img src="img/svgfiles/plus circle.svg" />
+                           <img src="img/svgfiles/plus_circle.svg" />
                         </div>
                     </div>
                     <div class="our-team-saying-desc team-member-3">  
@@ -665,7 +727,7 @@
                         </div>
                         <div class="overlay"></div>
                         <div class="overlay-content">
-                           <img src="img/svgfiles/plus circle.svg" />
+                           <img src="img/svgfiles/plus_circle.svg" />
                         </div>
                     </div>
                 </div>
@@ -690,141 +752,379 @@
                     </div>
                     <div class="centered-what-we-do-desc zoomOutCenteredDiv">
                         <div class="what-we-do-sub-container-default">
+                            <div class="default-align-middle">
                             <div class="what-we-do-heading">What we do</div>
-                            <div class="what-we-do-sub-heading">Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                            <div>
+                            <div class="what-we-do-sub-heading">Lorem Ispem is simpy dummy text of the<br> printing and typesetting industry.</div>
+                            <div class="clearfix">
                                 <div class="what-we-do-individual-desc-container">
                                     <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                    <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
+                                    <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry Lorem Ispem has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</div>
                                 </div>
+                                <div class="what-we-do-default-vertical-line"></div>
                                 <div class="what-we-do-individual-desc-container">
                                     <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                    <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
+                                    <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry Lorem Ispem has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</div>
                                 </div>
+                                <div class="what-we-do-default-vertical-line"></div>
                                 <div class="what-we-do-individual-desc-container">
                                     <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                    <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
+                                    <div class="what-we-do-individual-desc">When an unknown printer took a galley of type and scrambled it to make a type specimen book Lorem Ispem is simpy dummy text of the printing and typesetting industry Lorem Ispem has</div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="what-we-do-hidden-div UpDownToggleIcon1Desc" id="what-we-do-icon1"> 
+                                <div class="what-we-do-padding">
+                                <img  class="close-current-tab" src="img/fancy_closebox.png" />
+                                <div class="about-health-heading1">
+                                    Health is not valued till<br>sickness comes.
+                                </div>
+                                <div class="about-health-heading2">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                </div>
+                                <div class="all-parts clearfix">
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/eye.svg" /></span><span>Eyes</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/ear.svg" /></span><span>Ears</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/brain.svg" /></span><span>Brain</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Standard dummy text ever since the 1550s, when an unknown printer took a gallery of type and ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/teeth.svg" /></span><span>Teeth</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Standard dummy text ever since the 1550s, when an unknown printer took a gallery of type and ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/lungs.svg" /></span><span>Lungs</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
 
-                        <div class="what-we-do-hidden-div UpDownToggleIcon1Desc" id="what-we-do-icon1"> icon1 desc
+                        <div class="what-we-do-hidden-div UpDownToggleIcon1Desc" id="what-we-do-icon2"> 
+                                <div class="what-we-do-padding">
                                 <img  class="close-current-tab" src="img/fancy_closebox.png" />
-                                <div class="what-we-do-heading">What we do</div>
-                                <div class="what-we-do-sub-heading">Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                <div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
+                                <div class="about-health-heading1">
+                                    Health is not valued till<br>sickness comes.
                                 </div>
+                                <div class="about-health-heading2">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                </div>
+                                <div class="all-parts clearfix">
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/eye.svg" /></span><span>Eyes</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/ear.svg" /></span><span>Ears</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/brain.svg" /></span><span>Brain</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Standard dummy text ever since the 1550s, when an unknown printer took a gallery of type and ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/teeth.svg" /></span><span>Teeth</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Standard dummy text ever since the 1550s, when an unknown printer took a gallery of type and ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/lungs.svg" /></span><span>Lungs</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="what-we-do-hidden-div UpDownToggleIcon1Desc" id="what-we-do-icon2"> icon2 desc
+                        <div class="what-we-do-hidden-div UpDownToggleIcon3Desc" id="what-we-do-icon3">
+                            <div class="what-we-do-padding">
                                 <img  class="close-current-tab" src="img/fancy_closebox.png" />
-                                <div class="what-we-do-heading">What we do</div>
-                                <div class="what-we-do-sub-heading">Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                <div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
+                                <div class="about-health-heading1">
+                                    Health is not valued till<br>sickness comes.
                                 </div>
+                                <div class="about-health-heading2">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                </div>
+                                <div class="all-parts clearfix">
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/eye.svg" /></span><span>Eyes</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/ear.svg" /></span><span>Ears</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/brain.svg" /></span><span>Brain</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Standard dummy text ever since the 1550s, when an unknown printer took a gallery of type and ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/teeth.svg" /></span><span>Teeth</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Standard dummy text ever since the 1550s, when an unknown printer took a gallery of type and ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/lungs.svg" /></span><span>Lungs</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="what-we-do-hidden-div UpDownToggleIcon3Desc" id="what-we-do-icon3"> icon3 desc
+                        <div class="what-we-do-hidden-div UpDownToggleIcon4Desc" id="what-we-do-icon4"> 
+                                <div class="what-we-do-padding">
                                 <img  class="close-current-tab" src="img/fancy_closebox.png" />
-                                <div class="what-we-do-heading">What we do</div>
-                                <div class="what-we-do-sub-heading">Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                <div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
+                                <div class="about-health-heading1">
+                                    Health is not valued till<br>sickness comes.
                                 </div>
+                                <div class="about-health-heading2">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                </div>
+                                <div class="all-parts clearfix">
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/eye.svg" /></span><span>Eyes</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/ear.svg" /></span><span>Ears</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/brain.svg" /></span><span>Brain</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Standard dummy text ever since the 1550s, when an unknown printer took a gallery of type and ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/teeth.svg" /></span><span>Teeth</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Standard dummy text ever since the 1550s, when an unknown printer took a gallery of type and ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/lungs.svg" /></span><span>Lungs</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="what-we-do-hidden-div UpDownToggleIcon4Desc" id="what-we-do-icon4"> icon4 desc
+                        <div class="what-we-do-hidden-div UpDownToggleIcon56Desc" id="what-we-do-icon5"> 
+                                <div class="what-we-do-padding">
                                 <img  class="close-current-tab" src="img/fancy_closebox.png" />
-                                <div class="what-we-do-heading">What we do</div>
-                                <div class="what-we-do-sub-heading">Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                <div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
+                                <div class="about-health-heading1">
+                                    Health is not valued till<br>sickness comes.
                                 </div>
-                        </div>
+                                <div class="about-health-heading2">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                </div>
+                                <div class="all-parts clearfix">
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/eye.svg" /></span><span>Eyes</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...
+                                        </div>
+                                    </div>
 
-                        <div class="what-we-do-hidden-div UpDownToggleIcon56Desc" id="what-we-do-icon5"> icon5 desc
-                                <img  class="close-current-tab" src="img/fancy_closebox.png" />
-                                <div class="what-we-do-heading">What we do</div>
-                                <div class="what-we-do-sub-heading">Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                <div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/ear.svg" /></span><span>Ears</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+                                        </div>
                                     </div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/brain.svg" /></span><span>Brain</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Standard dummy text ever since the 1550s, when an unknown printer took a gallery of type and ...
+                                        </div>
                                     </div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/teeth.svg" /></span><span>Teeth</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Standard dummy text ever since the 1550s, when an unknown printer took a gallery of type and ...
+                                        </div>
                                     </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/lungs.svg" /></span><span>Lungs</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...
+                                        </div>
+                                    </div>
+
                                 </div>
+                            </div>
                         </div>
-                        <div class="what-we-do-hidden-div UpDownToggleIcon56Desc" id="what-we-do-icon6"> icon6 desc
+                        <div class="what-we-do-hidden-div UpDownToggleIcon56Desc" id="what-we-do-icon6"> 
+                                <div class="what-we-do-padding">
                                 <img  class="close-current-tab" src="img/fancy_closebox.png" />
-                                <div class="what-we-do-heading">What we do</div>
-                                <div class="what-we-do-sub-heading">Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                <div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
-                                    <div class="what-we-do-individual-desc-container">
-                                        <div class="what-we-do-individual-heading">Lorem Ispem</div>
-                                        <div class="what-we-do-individual-desc">Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.Lorem Ispem is simpy dummy text of the printing and typesetting industry.</div>
-                                    </div>
+                                <div class="about-health-heading1">
+                                    Health is not valued till<br>sickness comes.
                                 </div>
+                                <div class="about-health-heading2">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                </div>
+                                <div class="all-parts clearfix">
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/eye.svg" /></span><span>Eyes</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/ear.svg" /></span><span>Ears</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/brain.svg" /></span><span>Brain</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Standard dummy text ever since the 1550s, when an unknown printer took a gallery of type and ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/teeth.svg" /></span><span>Teeth</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Standard dummy text ever since the 1550s, when an unknown printer took a gallery of type and ...
+                                        </div>
+                                    </div>
+
+                                    <div class="individual-part">
+                                        <div class="individual-part-icon clearfix">
+                                            <span><img src="../img/svgfiles/lungs.svg" /></span><span>Lungs</span>
+                                        </div>
+                                        <div class="individual-part-icon-desc">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ...
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="what-we-do-icon34">
@@ -918,6 +1218,17 @@
                 var setCentered_what_wedo_height = $(window).height() - getTopBottomHeight;
                 $(".what-we-do-2").css("height",setCentered_what_wedo_height);
 
+                //set content in middle of box
+                //var getContentHeight = $(".what-we-do-padding").height();
+                var getContentHeight = 396;
+                var setMarginTop = (setCentered_what_wedo_height - 396)/2;
+                $(".what-we-do-padding").css("margin-top", setMarginTop);
+
+                //set height to vertical line for default opened div
+                var getDefaultContentHeight = $(".what-we-do-individual-desc-container").height() + 30;
+                $(".what-we-do-default-vertical-line").height(getDefaultContentHeight);
+
+
             }
             setWhatWeDoContainerDimentions();
             $(window).resize(function() {
@@ -971,6 +1282,7 @@
             });
 
             $(".what-we-do-icon").click(function() {
+
                 $(".what-we-do-icon").css("opacity","0.5");
 
                 //for removing delay in opacity when we click
@@ -1018,7 +1330,7 @@
 
             
             $(".close-current-tab").click(function() {
-                $(this).parent().removeClass("showCurrentDiv");
+                $(this).parent().parent().removeClass("showCurrentDiv");
                 $(".selected-icon").removeClass("selected-icon")
                 //remove background-color  for all icon containers
                 $(".what-we-do-icon1256, .what-we-do-icon34").removeClass("addBackground");
