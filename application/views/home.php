@@ -213,19 +213,24 @@
         transition: all 0.7s linear 0.5s;
     }
     .what-we-do-space2 {
-        margin-top: 150px;
+        display: table-cell;
+        vertical-align: middle;
         opacity: 0.5;
     }
     .what-we-do-icon34 {
       float: left;
       height: 100%;
+      width: 93px;
+      text-align: center;
+      display: table;
     }
     .what-we-do-space3 {
-        /*float: right;*/
-         margin-top: 150px;
+        display: table-cell;
+        vertical-align: middle;
     }
     .what-we-do-icon {
         opacity: 0;
+        padding: 10px;
     }
 
     /* add delay in opacity when loading */ 
@@ -591,6 +596,15 @@
         display: table-cell;
         vertical-align: middle;
     }
+    .what-we-do-icon img {
+        width: 50px;
+        height: 50px;
+    }
+    .what-we-do-icon-name {
+        color: white;
+        font-size: 16px;
+        font-family: "rock";
+    }
 
     </style>
     <link rel="stylesheet" type="text/css" href="../../fonts/rock/font.css">
@@ -765,16 +779,25 @@
             <div class="what-we-do-sub-container">
                 <div class="what-we-do-1 clearfix">
                   <div class="what-we-do-icon1256">
-                    <img class="what-we-do-space1 what-we-do-icon" data-id="what-we-do-icon1" src="img/parent.png" />
+                    <div class="what-we-do-space1 what-we-do-icon" data-id="what-we-do-icon1">
+                        <img src="img/svgfiles/Parents.svg" />
+                        <div class="what-we-do-icon-name">Parent</div>
+                    </div>
                   </div>
                   <div class="what-we-do-icon1256">
-                    <img class="what-we-do-icon" data-id="what-we-do-icon2" src="img/school.png" />
+                    <div class="what-we-do-icon" data-id="what-we-do-icon2" src="img/school.png">
+                        <img src="img/svgfiles/School.svg" />
+                        <div class="what-we-do-icon-name">School</div>
+                    </div>
                   </div>
                 </div>
 
                 <div class="what-we-do-2 clearfix">
                     <div class="what-we-do-icon34">
-                      <img class="what-we-do-space2 what-we-do-icon" data-id="what-we-do-icon3" src="img/success.png" />
+                      <div class="what-we-do-space2 what-we-do-icon" data-id="what-we-do-icon3">
+                        <img src="img/svgfiles/Student.svg" />
+                        <div class="what-we-do-icon-name">Student</div>
+                      </div>
                     </div>
                     <div class="centered-what-we-do-desc zoomOutCenteredDiv">
                         <div class="what-we-do-sub-container-default">
@@ -1154,16 +1177,26 @@
                         </div>
                     </div>
                     <div class="what-we-do-icon34">
-                      <img class="what-we-do-space3 what-we-do-icon" data-id="what-we-do-icon4" src="img/nurse.png" />
+                      <div class="what-we-do-space3 what-we-do-icon" data-id="what-we-do-icon4">
+                        <img src="img/svgfiles/Nurse.svg" />
+                        <div class="what-we-do-icon-name">Nurse</div>
+                      </div>
                     </div>
                 </div>
 
                 <div class="what-we-do-1 clearfix">
                   <div class="what-we-do-icon1256">
-                    <img class="what-we-do-space1 what-we-do-icon" data-id="what-we-do-icon5" src="img/report.png" />
+                    <div class="what-we-do-space1 what-we-do-icon" data-id="what-we-do-icon5">
+                        <img src="img/svgfiles/Reports.svg" />
+                        <div class="what-we-do-icon-name">Reports</div>
+                    </div>
                   </div>
                   <div class="what-we-do-icon1256">
-                    <img class="what-we-do-icon" data-id="what-we-do-icon6" src="img/school.png" />
+                    <div class="what-we-do-icon" data-id="what-we-do-icon6">
+                        <img src="img/svgfiles/Calendar.svg" />
+                        <div class="what-we-do-icon-name">Calendar</div>
+                    </div>
+
                   </div>
                 </div>
 
@@ -1234,13 +1267,13 @@
 
             function setWhatWeDoContainerDimentions () {
                 //set width
-                var get_what_we_do_icon_width = 95;
+                var get_what_we_do_icon_width = 93;
                 var getLeftRightIconWidth = get_what_we_do_icon_width * 2;
                 var setCentered_what_wedo_width = $(window).width() - getLeftRightIconWidth;
                 $(".centered-what-we-do-desc, .what-we-do-1").css("width",setCentered_what_wedo_width);
 
                 //set height
-                var TopBottomHeight = 110;
+                var TopBottomHeight = 93;
                 var getTopBottomHeight = TopBottomHeight * 2;
                 var setCentered_what_wedo_height = $(window).height() - getTopBottomHeight;
                 $(".what-we-do-2").css("height",setCentered_what_wedo_height);
